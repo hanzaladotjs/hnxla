@@ -4,6 +4,16 @@ import hanzala from "./assets/hanzala.jpg";
 import BackgroundBricks from "./components/ui/Background";
 function App() {
   const [dark, setDark] = useState(true);
+  const [time, setTime] = useState<any>(null)
+
+  function hi(){
+    const now = new Date()
+    setTime(now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds())
+    console.log("ho")
+  }
+
+  setInterval(hi, 1000)
+
 
   function handleClick() {
     if(dark==true){
@@ -23,9 +33,10 @@ function App() {
     > 
     { !dark
       ? <BackgroundBricks/> :  null}
-      
+      <div className="flex items-center"> 
+      <div className="absolute top-4 left-4">{time}</div>
       <button onClick={handleClick} className="absolute top-4 right-4   " > {dark ? <svg width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12C16 12.5523 16.4477 13 17 13Z" fill="#000000" stroke=" #FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7H17C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17Z" stroke=" #FFFFFF" stroke-width="1.5"></path></svg>:<svg width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 13C7.55228 13 8 12.5523 8 12C8 11.4477 7.55228 11 7 11C6.44772 11 6 11.4477 6 12C6 12.5523 6.44772 13 7 13Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7H17C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17Z" stroke="#000000" stroke-width="1.5"></path></svg>}</button>
-      
+      </div>
       <div className="flex flex-col ml-4 z-50 md:ml-0">
         
         <div className="flex space-x-2 md:space-x-6 md:justify-center mb-5 items-center">
