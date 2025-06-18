@@ -50,13 +50,13 @@ function App() {
         </h2>
         <h3 className="md:w-full mt-5 h-40 md:h-15 text-lg">
           my tech stack:{" "}
-          <span className={dark ? "text-blue-400  ": "text-blue-800"}>typescript/javascript </span>,{" "}
-          <span className={dark ?"text-yellow-400": "text-yellow-600"} > node.js </span>,
-          <span className={dark ?"text-pink-400" : "text-pink-700"}>react.js </span> ,{" "}
-          <span className={dark ? "text-green-400" : "text-green-800"}>tailwindcss</span> ,{" "}
-          <span className={dark ? "text-red-400" : "text-red-800"}>sql/nosql </span>,{" "}
-          <span className={dark ? "text-cyan-400": "text-gray-800"}> git </span>,
-          <span className={dark? "text-orange-400" : "text-orange-700"}> solidity, remix </span>
+          <span className={dark ? "text-blue-400 hover:bg-blue-900 ": "text-blue-800 hover:bg-white"}>typescript/javascript </span>,{" "}
+          <span className={dark ?"text-yellow-400 hover:bg-blue-900": "text-yellow-600 hover:bg-white"} > node.js </span>,
+          <span className={dark ?"text-pink-400 hover:bg-blue-900 " : "text-pink-700 hover:bg-white"}>react.js </span> ,{" "}
+          <span className={dark ? "text-green-400 hover:bg-blue-900" : "text-green-800 hover:bg-white"}>tailwindcss</span> ,{" "}
+          <span className={dark ? "text-red-400 hover:bg-blue-900 " : "text-red-800 hover:bg-white"}>sql/nosql </span>,{" "}
+          <span className={dark ? "text-cyan-400 hover:bg-blue-900": "text-gray-800 hover:bg-white"}> git </span>,
+          <span className={dark? "text-orange-400 hover:bg-blue-900" : "text-orange-700 hover:bg-white"}> solidity, remix </span>
         </h3>
         <h1 className="text-xl text-blue-600 text-start" >
           projects:
