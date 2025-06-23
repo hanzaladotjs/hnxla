@@ -39,7 +39,7 @@ interface TypingAnimationProps extends MotionProps {
 export const TypingAnimation = ({
   children,
   className,
-  duration = 10,
+  duration = 2,
   delay = 0,
   as: Component = "span",
   ...props
