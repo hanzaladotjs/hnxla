@@ -3,14 +3,19 @@ import "./App.css";
 import hanzala from "./assets/hanzala.jpg";
 import BackgroundBricks from "./components/ui/Background";
 function App() {
+  const use = new Date()
   const [dark, setDark] = useState(true);
-  const [time, setTime] = useState<any>(null)
+  const [time, setTime] = useState<any>(use.getHours() + ":" + use.getMinutes() + ":" + use.getSeconds())
+
+  
 
   function hi(){
     const now = new Date()
     setTime(now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds())
     console.log("ho")
   }
+
+
 
   setInterval(hi, 1000)
 
