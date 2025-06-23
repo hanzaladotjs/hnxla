@@ -33,15 +33,15 @@ function App() {
             
             <TypingAnimation delay={1000}>im 20 y/0 and a college dropout</TypingAnimation>
 
-            <TypingAnimation delay={4000} className="mb-2">im a full stack web2/web3 developer </TypingAnimation>
-            <TypingAnimation delay={8000}>frontend stack:  </TypingAnimation>
-            <TypingAnimation delay={10000} className="mb-2">typescript, react.js, tailwindcss </TypingAnimation>
-            <TypingAnimation delay={14000}>backend stack:  </TypingAnimation>
-            <TypingAnimation delay={16000} className="mb-2">node.js, express.js, nestjs </TypingAnimation>
-            <TypingAnimation delay={20000}>database stack:  </TypingAnimation>
-            <TypingAnimation delay={22000} className="mb-2">mongodb, postgreSQL, prisma </TypingAnimation>
-            <TypingAnimation delay={26000}>my web3 stack:  </TypingAnimation>
-            <TypingAnimation delay={28000}>solidity, ether.js, remix/foundry </TypingAnimation>
+            <TypingAnimation delay={2000} className="mb-2">im a full stack web2/web3 developer </TypingAnimation>
+            <TypingAnimation delay={3000}>frontend stack:  </TypingAnimation>
+            <TypingAnimation delay={4000} className="mb-2">typescript, react.js, tailwindcss </TypingAnimation>
+            <TypingAnimation delay={5000}>backend stack:  </TypingAnimation>
+            <TypingAnimation delay={6000} className="mb-2">node.js, express.js, nestjs </TypingAnimation>
+            <TypingAnimation delay={7000}>database stack:  </TypingAnimation>
+            <TypingAnimation delay={8000} className="mb-2">mongodb, postgreSQL, prisma </TypingAnimation>
+            <TypingAnimation delay={9000}>my web3 stack:  </TypingAnimation>
+            <TypingAnimation delay={10000}>solidity, ether.js, remix/foundry </TypingAnimation>
 
             
           </Terminal>
