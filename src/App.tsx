@@ -22,7 +22,7 @@ function App() {
 
 
   return (
-    <div className={light ? "flex flex-col items-center  space-y-20 font-sans tiktok-sans bg-white text-black min-h-[100vh] w-screen" : "flex flex-col items-center  font-sans tiktok-sans bg-black text-white min-h-[100vh] w-screen"}>
+    <div className={light ? "flex flex-col items-center  space-y-20 font-sans tiktok-sans bg-white text-black min-h-[100vh] w-screen" : "flex flex-col items-center space-y-20  font-sans tiktok-sans bg-black text-white min-h-[100vh] w-screen"}>
       <nav className={light ? "flex mt-5 sticky  bg-white rounded-md text-stone-800 h-13 border-3 border-stone-700  " : "flex mt-5 bg-black sticky  rounded-md text-stone-200 h-13 border-3 border-stone-200 "}>
         <button className="border-r-[3px] h-full flex items-center relative group inline-block">
           <img className="h-12 w-12 animation hover:animate-pulse" src={dazai}></img>
@@ -64,8 +64,9 @@ function App() {
           </div>
         </button>
       </nav>
-
-
+<p>
+working on it
+</p>
     </div>
   );
 }
