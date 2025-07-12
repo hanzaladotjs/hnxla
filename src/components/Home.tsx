@@ -4,7 +4,7 @@ import { IconCloudDemo } from "./ui/IconCloudDemo"
 
 const Home = () => {
     return (
-        <div className="flex flex-col mx-1">
+        <div className="flex flex-col ml-1">
 
             <h1 className=" text-5xl">
             Hadi Rasool

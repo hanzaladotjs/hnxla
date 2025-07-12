@@ -15,10 +15,14 @@ const slugs = [
   "amazonaws",
   "postgresql",
   "firebase",
+  "render",
+  "supabase",
  
   "vercel",
- 
-  
+  "postman",
+  "solidity",
+  "zod",
+  "axios",
   "git",
  
   "github",
