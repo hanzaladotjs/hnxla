@@ -29,10 +29,10 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className={light ? "flex flex-col items-center  space-y-13 font-sans tiktok-sans bg-white text-black min-h-[100vh] w-screen" : "flex flex-col items-center space-y-13 font-sans tiktok-sans bg-black text-white min-h-[100vh] w-screen"}>
-        <nav className={light ? "flex mt-5 sticky  bg-white rounded-md text-stone-800 h-13 border-3 border-stone-700  " : "flex mt-5 bg-black sticky  rounded-md text-stone-200 h-13 border-3 border-stone-200 "}>
+      <div className={light ? "flex flex-col items-center  space-y-7 font-sans tiktok-sans bg-white text-black min-h-[100vh] w-screen" : "flex flex-col items-center space-y-7 font-sans tiktok-sans bg-black text-white min-h-[100vh] w-screen"}>
+        <nav className={light ? "flex mt-5 sticky  bg-white rounded-md text-stone-800 md:h-13 h-10 border-3 border-stone-700  " : "flex mt-5 bg-black sticky  rounded-md text-stone-200 md:h-13 h-10 border-3 border-stone-200 "}>
           <Link to={"/"}><button className="border-r-[3px] h-full flex items-center relative group inline-block">
-            <img className="h-12 w-12 animation hover:animate-pulse" src={dazai}></img>
+            <img className="md:h-12 md:w-12 h-9 w-9 animation hover:animate-pulse" src={dazai}></img>
             <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-max text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
               home
             </div>
