@@ -10,6 +10,8 @@ import Blogs from "./components/Blogs";
 
 
 
+
+
 function App() {
 
   const [light, setLight] = useState<boolean>(false)
@@ -24,12 +26,16 @@ function App() {
     }
   }
 
-  // changeTheme()
+
 
 
   return (
     <BrowserRouter>
-      <div className={light ? "flex flex-col items-center  space-y-7 font-sans tiktok-sans bg-white text-black min-h-[100vh] w-screen" : "flex flex-col items-center space-y-7 font-sans tiktok-sans bg-black text-white min-h-[100vh] w-screen"}>
+
+      <div className={light ? "flex flex-col items-center  space-y-7 font-sans tiktok-sans bg-white text-black min-h-[100vh] w-screen" : "flex flex-col items-center space-y-7 font-sans tiktok-sans dark:bg-black dark:text-white min-h-[100vh] w-screen"}>
+         
+    
+     
         <nav className={light ? "flex mt-5 sticky  bg-white rounded-md text-stone-800 md:h-13 h-10 border-3 border-stone-700  " : "flex mt-5 bg-black sticky  rounded-md text-stone-200 md:h-13 h-10 border-3 border-stone-200 "}>
           <Link to={"/"}><button className="border-r-[3px] h-full flex items-center relative group inline-block">
             <img className="md:h-12 md:w-12 h-9 w-9 animation hover:animate-pulse" src={dazai}></img>
@@ -83,7 +89,7 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<Projects light={light}/>} />
             <Route path="/contact" element={<Contact light={light} />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blogs" element={<div> page not found </div>} />
