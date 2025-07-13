@@ -69,7 +69,7 @@ export const AnimatedTestimonials = ({
         </div>
 
         {/* Right Text Section */}
-        <div className="flex flex-col justify-between py-4 space-y-10">
+        <div className="flex flex-col justify-between py-4 space-y-5">
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
@@ -95,7 +95,7 @@ export const AnimatedTestimonials = ({
           </AnimatePresence>
 
           {/* Links */}
-          <div className="flex justify-between">
+          <div className="flex space-x-5">
             <a
               href={testimonials[active].repo}
               target="_blank"
@@ -123,7 +123,7 @@ export const AnimatedTestimonials = ({
           </div>
 
           {/* Navigation Buttons */}
-          <div className="flex gap-4 pt-12 md:pt-0">
+          <div className="flex gap-4">
             <button
               onClick={handlePrev}
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-black"
