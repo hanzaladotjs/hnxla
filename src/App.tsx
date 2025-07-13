@@ -32,7 +32,7 @@ function App() {
   return (
     <BrowserRouter>
 
-      <div className={light ? "flex flex-col items-center  space-y-7 font-sans tiktok-sans bg-white text-black min-h-[100vh] w-screen" : "flex flex-col items-center space-y-7 font-sans tiktok-sans dark:bg-black dark:text-white min-h-[100vh] w-screen"}>
+      <div className={light ? "flex flex-col items-center  space-y-7 font-sans tiktok-sans bg-white text-black min-h-[100vh] w-screen" : "flex flex-col items-center space-y-7 font-sans tiktok-sans bg-black text-white min-h-[100vh] w-screen"}>
          
     
      
