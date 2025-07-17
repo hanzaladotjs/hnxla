@@ -25,6 +25,8 @@ const Home = () => {
             <h2 className="text-stone-400"> BS, Computer Science (Online) </h2>
             <h2 className="text-gray-600"> University of People, USA</h2>
 
+            
+
 
         </div>
     )
