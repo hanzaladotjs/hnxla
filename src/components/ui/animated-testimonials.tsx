@@ -40,11 +40,11 @@ export const AnimatedTestimonials = ({
   }, [autoplay]);
 
   return (
-    <div className="mx-auto max-w-sm px-4 py-10 font-sans antialiased md:max-w-4xl md:px-8">
+    <div className="mx-auto max-w-sm px-4 md:py-10 font-sans antialiased md:max-w-4xl md:px-8">
       <div className="relative grid grid-cols-1 md:gap-20 md:grid-cols-2">
         {/* Left Image Section */}
         <div>
-          <div className="relative h-80 md:w-full w-80">
+          <div className="relative h-80 md:w-full ">
             <AnimatePresence mode="wait">
               <motion.div
                 key={testimonials[active].src}
@@ -52,16 +52,16 @@ export const AnimatedTestimonials = ({
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.9, y: -30 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="absolute inset-0"
+                className="absolute inset-0 "
               >
                 <img
                   loading="lazy"
                   src={testimonials[active].src}
                   alt={testimonials[active].name}
-                  width={500}
-                  height={500}
-                  draggable={false}
-                  className="h-full w-full p-1 rounded-md object-cover object-center"
+                  width={300}
+                  height={300}
+                  draggable={true}
+                  className="h-full w-full p-1  object-center "
                 />
               </motion.div>
             </AnimatePresence>
@@ -69,7 +69,7 @@ export const AnimatedTestimonials = ({
         </div>
 
         {/* Right Text Section */}
-        <div className="flex flex-col justify-between py-4 space-y-5">
+        <div className="flex flex-col justify-between md:py-4 space-y-5">
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
