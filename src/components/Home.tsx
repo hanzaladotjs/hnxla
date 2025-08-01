@@ -13,9 +13,7 @@ const Home = () => {
                 Full stack developer
             </h2>
 
-            <h1 className="md:w-140 mb-10"> Full stack developer, trying to <span className="text-green-500"> really </span> become a full stack developer. Someone who wants to become enough
-                capable to take <span className="text-blue-500">ownership </span> of stuff. Ran away from <span className="text-red-500"> tutorial hell </span>. Goal is to become enough <span className="text-yellow-500">tech agonstic</span>  by
-                the time I retire.</h1>
+            <h1 className="md:w-140 mb-10 antialiased text-lg"> 20. computer sci major. web apps developer . interests: web3, ai (esp. agentic ai), decentralization, metaverse, privacy, finance, economics, hustle culture, minimalism, novels, anime sometimes, nolan's movies and likes. </h1>
 
             
             <h1 className="text-2xl text-start "> Skills:</h1>
