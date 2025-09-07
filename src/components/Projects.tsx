@@ -1,14 +1,23 @@
 import { AnimatedTestimonials } from "./ui/animated-testimonials"
 import quickfire from "/src/assets/quickfire.png"
 import gibmoney from "/src/assets/gib.png"
-import hoodle from "/src/assets/hoodle.png"
-import atrium from "/src/assets/atrium.png"
-import octant from "/src/assets/octant.png"
+import todopng from "../../src/assets/todo.png"
+import k2k from "../../src/assets/k2k.png"
 
 const Projects = ({ light }: any) => {
 
     const pow: any = [
-        {
+          {
+            name: "K2K",
+            designation: "Knowledge to Knowledge",
+            quote: `Built a full stack skills barter app, where users can barter skills, post offers, reciever proposals, talk to other
+users and much more.        
+Tech stack: Typescript/Reactjs, TailwindCSS, Zustand, Cloudflare workers, HonoJs, PostgreSQL, Drizzle-
+ORM`,
+            src: k2k,
+            live: "https://k2k.hanzala.xyz",
+            repo: "https://github.com/hanzaladotjs/k2k-"
+        },{
             name: "Quickfire",
             designation: "Postman for kids",
             quote: `Built a postman like app for absolute beginners, its has basic features like get, post, put, delete, headers.
@@ -27,31 +36,17 @@ Tech stack: Typescript/Reactjs, Nodejs, Expressjs, MongoDB`,
             repo: "https://github.com/hanzaladotjs/gibmoney",
             src: gibmoney,
         },
-        {
-                name: "Hoodle",
-            designation: "Crypto data app",
-            quote: `Created a react app, that fetches data from free crypto api’s, rendering the data.
-Tech stack: Typescript, Reactjs, TailwindCSS, DiaData API, CoinGecko API`,
-            live: "https://hoodle.hanzala.xyz",
-            repo: "https://github.com/hanzaladotjs/hoodle",
-            src: hoodle,
-        }, {
-           name: "Atrium clone",
-            designation: "Clone of atrium.academy's landing page",
-            quote: `Cloned the landing page of atrium.academy
-Tech stack: Typescript, Reactjs, TailwindCSS.`,
-            live: "https://atrium-clone.vercel.app",
-            repo: "https://github.com/hanzaladotjs/atrium-clone",
-            src: atrium,
-        },  {
-           name: "Octant clone",
-            designation: "Clone of Octant.app's landing page",
-            quote: `Cloned the landing page of Octant.app
-Tech stack: Typescript, Reactjs, TailwindCSS.`,
-            live: "https://octant-clone.vercel.app",
-            repo: "https://github.com/hanzaladotjs/octant-clone",
-            src: octant,
+          {
+            name: "Todo App",
+            designation: "Dont forget your todos",
+            quote: `Built a full stack todo app with auth, where users can add, update, delete todos.
+Tech stack: Typescript/Reactjs, Nodejs, Expressjs, MySQL, Recoiljs`,
+            live: "https://todo.hanzala.xyz",
+            repo: "https://github.com/hanzaladotjs/mysqltodo",
+            src: todopng,
         }
+
+       
 
     ]
     return (

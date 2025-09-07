@@ -61,7 +61,7 @@ export const AnimatedTestimonials = ({
                   width={300}
                   height={300}
                   draggable={true}
-                  className="h-full w-full p-1  object-center "
+                  className="h-full w-full p-1  object-fill "
                 />
               </motion.div>
             </AnimatePresence>

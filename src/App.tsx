@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import "./App.css";
-import dazai from "/src/assets/dazai.jpeg"
+import dazai from "/src/assets/dazai.png"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
@@ -36,8 +36,8 @@ function App() {
          
     
         <nav className={light ? "flex mt-5 sticky  bg-white rounded-md text-stone-800 md:h-13 h-10 border-3 border-stone-700  " : "flex mt-5 bg-black sticky  rounded-md text-stone-200 md:h-13 h-10 border-3 border-stone-200 "}>
-          <Link to={"/"}><button className="border-r-[3px] h-full md:w-15 flex items-center relative group inline-block">
-            <img className="md:h-11.5 md:w-15 h-8.5 w-11  animation hover:animate-pulse" src={dazai}></img>
+          <Link to={"/"}><button className="border-r-[3px] h-full md:w-13 flex items-center relative group inline-block">
+            <img className="md:h-11.5 md:w-13 h-8.5 w-11  animation hover:animate-pulse object-center" src={dazai}></img>
             <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-max text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10">
               home
             </div>
